@@ -3,7 +3,6 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
 import { UserEntity } from './entities/user.entity';
-import { UserService } from './implementations/user.service';
 
 @Module({
   imports: [
@@ -19,6 +18,5 @@ import { UserService } from './implementations/user.service';
       entities: [UserEntity],
     }),
   ],
-  providers: [UserService],
 })
 export class PostgresModule {}

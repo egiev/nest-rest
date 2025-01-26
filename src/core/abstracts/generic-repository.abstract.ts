@@ -1,5 +1,5 @@
 export abstract class GenericRepository<T> {
-  abstract find(query: Partial<T>): Promise<T[]>;
+  abstract find(query?: Partial<T>): Promise<T[]>;
 
   abstract findOne(id: string): Promise<T | null>;
 
