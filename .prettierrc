@@ -6,7 +6,14 @@
     "@trivago/prettier-plugin-sort-imports",
     "prettier-plugin-packagejson"
   ],
-  "importOrder": ["^@nestjs/(.*)$", "^[./]"],
+  "importOrder": [
+    "^@nestjs/(.*)$",
+    "typeorm$",
+    "^@core/(.*)$",
+    "^@application/(.*)$",
+    "^@infrastructure/(.*)$",
+    "^[./]"
+  ],
   "importOrderSeparation": true,
   "importOrderParserPlugins": [
     "typescript",
